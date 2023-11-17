@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B17D7452B07B75C009304A8 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B17D7442B07B75C009304A8 /* NewMessageView.swift */; };
 		4B5457A12B0798020052BCEA /* SchwietzMessageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5457A02B0798020052BCEA /* SchwietzMessageApp.swift */; };
 		4B5457A32B0798020052BCEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5457A22B0798020052BCEA /* ContentView.swift */; };
 		4B5457A52B0798040052BCEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B5457A42B0798040052BCEA /* Assets.xcassets */; };
 		4B5457A82B0798040052BCEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B5457A72B0798040052BCEA /* Preview Assets.xcassets */; };
+		4B5457B72B0798630052BCEA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5457B62B0798630052BCEA /* LoginView.swift */; };
+		4B5457BA2B07A1550052BCEA /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5457B92B07A1550052BCEA /* SignupView.swift */; };
+		4B5457BF2B07AF860052BCEA /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5457BE2B07AF860052BCEA /* InboxView.swift */; };
+		4B5457C22B07B0B20052BCEA /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5457C12B07B0B20052BCEA /* ActiveNowView.swift */; };
+		4B5457C52B07B2630052BCEA /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5457C42B07B2630052BCEA /* InboxRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B17D7442B07B75C009304A8 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 		4B54579D2B0798020052BCEA /* SchwietzMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchwietzMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5457A02B0798020052BCEA /* SchwietzMessageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchwietzMessageApp.swift; sourceTree = "<group>"; };
 		4B5457A22B0798020052BCEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B5457A42B0798040052BCEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B5457A72B0798040052BCEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4B5457B62B0798630052BCEA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4B5457B92B07A1550052BCEA /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		4B5457BE2B07AF860052BCEA /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		4B5457C12B07B0B20052BCEA /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
+		4B5457C42B07B2630052BCEA /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B17D7432B07B750009304A8 /* NewMessage */ = {
+			isa = PBXGroup;
+			children = (
+				4B17D7442B07B75C009304A8 /* NewMessageView.swift */,
+			);
+			path = NewMessage;
+			sourceTree = "<group>";
+		};
 		4B5457942B0798020052BCEA = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +71,11 @@
 		4B54579F2B0798020052BCEA /* SchwietzMessage */ = {
 			isa = PBXGroup;
 			children = (
-				4B5457A02B0798020052BCEA /* SchwietzMessageApp.swift */,
-				4B5457A22B0798020052BCEA /* ContentView.swift */,
+				4B5457B22B0798240052BCEA /* Extensions */,
+				4B5457B12B07981E0052BCEA /* Service */,
+				4B5457B02B0798190052BCEA /* Model */,
+				4B5457AF2B0798140052BCEA /* Core */,
+				4B5457AE2B07980D0052BCEA /* App */,
 				4B5457A42B0798040052BCEA /* Assets.xcassets */,
 				4B5457A62B0798040052BCEA /* Preview Content */,
 			);
@@ -65,6 +88,97 @@
 				4B5457A72B0798040052BCEA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B5457AE2B07980D0052BCEA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4B5457A02B0798020052BCEA /* SchwietzMessageApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4B5457AF2B0798140052BCEA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4B5457BD2B07AF780052BCEA /* Inbox */,
+				4B5457B42B07984A0052BCEA /* Root */,
+				4B5457B32B0798420052BCEA /* Authentication */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4B5457B02B0798190052BCEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B5457B12B07981E0052BCEA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4B5457B22B0798240052BCEA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4B5457B32B0798420052BCEA /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				4B5457B52B0798560052BCEA /* View */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		4B5457B42B07984A0052BCEA /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				4B5457A22B0798020052BCEA /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		4B5457B52B0798560052BCEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B5457B62B0798630052BCEA /* LoginView.swift */,
+				4B5457B92B07A1550052BCEA /* SignupView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B5457BD2B07AF780052BCEA /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				4B17D7432B07B750009304A8 /* NewMessage */,
+				4B5457C32B07B25A0052BCEA /* InboxRow */,
+				4B5457C02B07B0A80052BCEA /* ActiveNow */,
+				4B5457BE2B07AF860052BCEA /* InboxView.swift */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
+		4B5457C02B07B0A80052BCEA /* ActiveNow */ = {
+			isa = PBXGroup;
+			children = (
+				4B5457C12B07B0B20052BCEA /* ActiveNowView.swift */,
+			);
+			path = ActiveNow;
+			sourceTree = "<group>";
+		};
+		4B5457C32B07B25A0052BCEA /* InboxRow */ = {
+			isa = PBXGroup;
+			children = (
+				4B5457C42B07B2630052BCEA /* InboxRowView.swift */,
+			);
+			path = InboxRow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +251,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B5457C52B07B2630052BCEA /* InboxRowView.swift in Sources */,
+				4B17D7452B07B75C009304A8 /* NewMessageView.swift in Sources */,
+				4B5457BA2B07A1550052BCEA /* SignupView.swift in Sources */,
+				4B5457B72B0798630052BCEA /* LoginView.swift in Sources */,
+				4B5457BF2B07AF860052BCEA /* InboxView.swift in Sources */,
+				4B5457C22B07B0B20052BCEA /* ActiveNowView.swift in Sources */,
 				4B5457A32B0798020052BCEA /* ContentView.swift in Sources */,
 				4B5457A12B0798020052BCEA /* SchwietzMessageApp.swift in Sources */,
 			);
