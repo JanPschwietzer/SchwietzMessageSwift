@@ -27,6 +27,7 @@
 		4B17D7472B08B17E009304A8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4B17D74B2B08B36C009304A8 /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
 		4B17D74D2B08B925009304A8 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		4B17D74F2B08BDB0009304A8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4B54579D2B0798020052BCEA /* SchwietzMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchwietzMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5457A02B0798020052BCEA /* SchwietzMessageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchwietzMessageApp.swift; sourceTree = "<group>"; };
 		4B5457A22B0798020052BCEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +88,7 @@
 		4B5457942B0798020052BCEA = {
 			isa = PBXGroup;
 			children = (
+				4B17D74F2B08BDB0009304A8 /* README.md */,
 				4B54579F2B0798020052BCEA /* SchwietzMessage */,
 				4B54579E2B0798020052BCEA /* Products */,
 			);
