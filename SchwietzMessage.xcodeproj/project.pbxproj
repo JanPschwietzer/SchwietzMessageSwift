@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4B17D7452B07B75C009304A8 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B17D7442B07B75C009304A8 /* NewMessageView.swift */; };
+		4B17D7482B08B17E009304A8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B17D7472B08B17E009304A8 /* ProfileView.swift */; };
+		4B17D74C2B08B36C009304A8 /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B17D74B2B08B36C009304A8 /* SettingsOptionsViewModel.swift */; };
+		4B17D74E2B08B925009304A8 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B17D74D2B08B925009304A8 /* ProfileViewModel.swift */; };
 		4B5457A12B0798020052BCEA /* SchwietzMessageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5457A02B0798020052BCEA /* SchwietzMessageApp.swift */; };
 		4B5457A32B0798020052BCEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5457A22B0798020052BCEA /* ContentView.swift */; };
 		4B5457A52B0798040052BCEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B5457A42B0798040052BCEA /* Assets.xcassets */; };
@@ -21,6 +24,9 @@
 
 /* Begin PBXFileReference section */
 		4B17D7442B07B75C009304A8 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
+		4B17D7472B08B17E009304A8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		4B17D74B2B08B36C009304A8 /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
+		4B17D74D2B08B925009304A8 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		4B54579D2B0798020052BCEA /* SchwietzMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchwietzMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5457A02B0798020052BCEA /* SchwietzMessageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchwietzMessageApp.swift; sourceTree = "<group>"; };
 		4B5457A22B0798020052BCEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +56,32 @@
 				4B17D7442B07B75C009304A8 /* NewMessageView.swift */,
 			);
 			path = NewMessage;
+			sourceTree = "<group>";
+		};
+		4B17D7462B08B15F009304A8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4B17D74A2B08B1F1009304A8 /* ViewModel */,
+				4B17D7492B08B1EA009304A8 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		4B17D7492B08B1EA009304A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B17D7472B08B17E009304A8 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B17D74A2B08B1F1009304A8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4B17D74B2B08B36C009304A8 /* SettingsOptionsViewModel.swift */,
+				4B17D74D2B08B925009304A8 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		4B5457942B0798020052BCEA = {
@@ -101,9 +133,10 @@
 		4B5457AF2B0798140052BCEA /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4B17D7462B08B15F009304A8 /* Profile */,
+				4B5457B32B0798420052BCEA /* Authentication */,
 				4B5457BD2B07AF780052BCEA /* Inbox */,
 				4B5457B42B07984A0052BCEA /* Root */,
-				4B5457B32B0798420052BCEA /* Authentication */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -252,12 +285,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B5457C52B07B2630052BCEA /* InboxRowView.swift in Sources */,
+				4B17D7482B08B17E009304A8 /* ProfileView.swift in Sources */,
 				4B17D7452B07B75C009304A8 /* NewMessageView.swift in Sources */,
 				4B5457BA2B07A1550052BCEA /* SignupView.swift in Sources */,
 				4B5457B72B0798630052BCEA /* LoginView.swift in Sources */,
 				4B5457BF2B07AF860052BCEA /* InboxView.swift in Sources */,
 				4B5457C22B07B0B20052BCEA /* ActiveNowView.swift in Sources */,
+				4B17D74E2B08B925009304A8 /* ProfileViewModel.swift in Sources */,
 				4B5457A32B0798020052BCEA /* ContentView.swift in Sources */,
+				4B17D74C2B08B36C009304A8 /* SettingsOptionsViewModel.swift in Sources */,
 				4B5457A12B0798020052BCEA /* SchwietzMessageApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

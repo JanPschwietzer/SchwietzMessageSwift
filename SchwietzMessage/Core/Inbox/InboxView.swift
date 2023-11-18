@@ -27,7 +27,12 @@ struct InboxView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     HStack {
-                        Image(systemName: "person.circle.fill")
+                        NavigationLink {
+                            ProfileView()
+                        } label: {
+                            Image(systemName: "person.circle.fill")
+                                .foregroundColor(.black)
+                        }
                         
                         Text("Chats")
                             .font(.title)
