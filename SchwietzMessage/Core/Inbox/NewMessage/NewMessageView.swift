@@ -30,8 +30,7 @@ struct NewMessageView: View {
                         
                         ForEach(0...10, id: \.self) { data in
                             HStack {
-                                Image(systemName: "person.circle.fill")
-                                    .resizable()
+                                CircularProfileImageView(user: User.TEST_USER2, lineWidth: 1)
                                     .frame(width: 32, height: 32)
                                 .foregroundStyle(Color(.systemGray4))
                                 Text("Name")
