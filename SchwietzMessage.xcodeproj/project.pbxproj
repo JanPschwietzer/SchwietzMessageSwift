@@ -20,6 +20,8 @@
 		4B5457BF2B07AF860052BCEA /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5457BE2B07AF860052BCEA /* InboxView.swift */; };
 		4B5457C22B07B0B20052BCEA /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5457C12B07B0B20052BCEA /* ActiveNowView.swift */; };
 		4B5457C52B07B2630052BCEA /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5457C42B07B2630052BCEA /* InboxRowView.swift */; };
+		4BB5C90F2B0BAD710094191F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5C90E2B0BAD710094191F /* User.swift */; };
+		4BB5C9122B0BB13E0094191F /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5C9112B0BB13E0094191F /* CircularProfileImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		4B5457BE2B07AF860052BCEA /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 		4B5457C12B07B0B20052BCEA /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
 		4B5457C42B07B2630052BCEA /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
+		4BB5C90E2B0BAD710094191F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4BB5C9112B0BB13E0094191F /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 		4B5457AF2B0798140052BCEA /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4BB5C9102B0BB12B0094191F /* Components */,
 				4B17D7462B08B15F009304A8 /* Profile */,
 				4B5457B32B0798420052BCEA /* Authentication */,
 				4B5457BD2B07AF780052BCEA /* Inbox */,
@@ -146,6 +151,7 @@
 		4B5457B02B0798190052BCEA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4BB5C90E2B0BAD710094191F /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -214,6 +220,14 @@
 				4B5457C42B07B2630052BCEA /* InboxRowView.swift */,
 			);
 			path = InboxRow;
+			sourceTree = "<group>";
+		};
+		4BB5C9102B0BB12B0094191F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4BB5C9112B0BB13E0094191F /* CircularProfileImageView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,9 +305,11 @@
 				4B17D7452B07B75C009304A8 /* NewMessageView.swift in Sources */,
 				4B5457BA2B07A1550052BCEA /* SignupView.swift in Sources */,
 				4B5457B72B0798630052BCEA /* LoginView.swift in Sources */,
+				4BB5C9122B0BB13E0094191F /* CircularProfileImageView.swift in Sources */,
 				4B5457BF2B07AF860052BCEA /* InboxView.swift in Sources */,
 				4B5457C22B07B0B20052BCEA /* ActiveNowView.swift in Sources */,
 				4B17D74E2B08B925009304A8 /* ProfileViewModel.swift in Sources */,
+				4BB5C90F2B0BAD710094191F /* User.swift in Sources */,
 				4B5457A32B0798020052BCEA /* ContentView.swift in Sources */,
 				4B17D74C2B08B36C009304A8 /* SettingsOptionsViewModel.swift in Sources */,
 				4B5457A12B0798020052BCEA /* SchwietzMessageApp.swift in Sources */,
@@ -438,6 +454,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,6 +484,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -11,10 +11,8 @@ struct InboxRowView: View {
     var body: some View {
         ZStack(alignment: .topTrailing) {
             HStack(alignment: .top, spacing: 12) {
-                Image(systemName: "person.circle.fill")
-                    .resizable()
+                CircularProfileImageView(user: User.TEST_USER2, lineWidth: 1)
                     .frame(width: 64, height: 64)
-                    .foregroundStyle(Color(.systemGray4))
                 VStack(alignment: .leading) {
                     Text("Name")
                         .font(.subheadline)
