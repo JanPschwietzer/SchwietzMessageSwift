@@ -19,6 +19,7 @@ struct NewMessageView: View {
                     .frame(height: 44)
                     .padding(.leading)
                     .background(Color(.systemGroupedBackground))
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
                     .padding()
                 ScrollView {
                     VStack {
@@ -32,7 +33,6 @@ struct NewMessageView: View {
                             HStack {
                                 CircularProfileImageView(user: User.TEST_USER2, lineWidth: 1)
                                     .frame(width: 32, height: 32)
-                                .foregroundStyle(Color(.systemGray4))
                                 Text("Name")
                                     .font(.subheadline)
                                     .fontWeight(.semibold)
